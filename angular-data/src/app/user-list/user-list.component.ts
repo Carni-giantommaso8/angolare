@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
+import { UserItemComponent } from '../user-item/user-item.component';
 
 @Component({
   selector: 'app-user-list',
-  imports: [],
+  imports: [UserItemComponent],
   templateUrl: './user-list.component.html',
   styleUrl: './user-list.component.css'
 })
 export class UserListComponent{
-  names: string[]; //Creiamo il nostro vettore di stringhe 
+  names: string[]; 
   constructor() { 
-     this.names = ['Ari', 'Carlos', 'Felipe', 'Nate']; //Riempiamo il vettore
+     this.names = ['Ari', 'Carlos', 'Felipe', 'Nate']; 
   }
   ngOnInit() {
   }
