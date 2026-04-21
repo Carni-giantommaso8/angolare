@@ -9,16 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UserItemComponent implements OnInit {
   @Input() name: string;
-  isImageVisible: boolean = true;
   
   constructor() { 
     this.name = ''; 
   }
   
   ngOnInit() {
-  }
-  
-  toggleImage() {
-    this.isImageVisible = !this.isImageVisible;
   }
 } 
